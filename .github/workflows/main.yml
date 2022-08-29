@@ -12,5 +12,5 @@ jobs:
     steps:
 
       - name: clone changes
-        working-directory: /flask-app/Ex_1/'from flask import Flask'.py
+        working-directory: /flask-app/Ex_1/
         run: git pull
