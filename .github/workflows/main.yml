@@ -12,5 +12,5 @@ jobs:
     steps:
 
       - name: clone changes
-        working-directory: /flask-app/Ex_1/Flask.py
+        working-directory: /home/ubuntu/flask-app/Ex_1/Flask.py
         run: git pull
