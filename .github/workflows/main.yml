@@ -1,0 +1,16 @@
+name: CI CD
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: [ "main" ]
+    
+jobs:
+  pm2-restart-workflow:
+    runs-on: self-hosted
+    steps:
+
+      - name: clone changes
+        working-directory: /var/www/vlad12345
+        run: git pull
